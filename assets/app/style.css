@@ -32,6 +32,23 @@
 
 #big-hero {
   width: 100%;
-  height: 85vh;
-  background-color: #9fe40e;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#big-hero .layer {
+  animation: zoomIn 3s linear infinite;
+}
+#big-hero .layer img {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
 }
